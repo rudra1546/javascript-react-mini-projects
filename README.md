@@ -19,11 +19,11 @@ javascript-react-mini-projects
 
 ├── javascript-projects
 
-│ ├── digital-clock # ✅ Completed
+│ ├── digital-clock # 🔜 Planned
 
 │ ├── calculator # 🔜 Planned
 
-│ ├── todo-list # 🔜 Planned
+│ ├── todo-list # ✅ Completed
 
 
 │ └── image-comparison # 🔜 Planned
