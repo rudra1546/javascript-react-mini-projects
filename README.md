@@ -21,7 +21,7 @@ javascript-react-mini-projects
 
 │ ├── digital-clock # ✅ Completed
 
-│ ├── calculator # 🔜 Planned
+│ ├── calculator # ✅ Completed
 
 │ ├── todo-list # ✅ Completed
 
