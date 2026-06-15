@@ -26,15 +26,13 @@ javascript-react-mini-projects
 │ ├── todo-list # ✅ Completed
 
 
-│ └── image-comparison # 🔜 Planned
-
 │
 
 ├── react-projects
 
 │ ├── weather-app # 🔜 Planned
 
-│ ├── login-signup-ui # 🔜 Planned
+│ ├── Expense Tracker # ✅ Completed
 
 │ └── dashboard-ui # 🔜 Planned
 
