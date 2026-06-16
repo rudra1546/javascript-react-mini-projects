@@ -30,7 +30,7 @@ javascript-react-mini-projects
 
 ├── react-projects
 
-│ ├── weather-app # 🔜 Planned
+│ ├── weather-app # ✅ Completed
 
 │ ├── Expense Tracker # ✅ Completed
 
