@@ -1,34 +1,34 @@
 import { useState } from 'react'
 
 import './App.css'
-
+import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
+import StatsCard from './components/StatsCard';
+import RevenueChart from './components/RevenueChart';
+import RecentActivity from './components/RecentActivity';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className='dashboard'>
-      <aside className='sidebar'>
-        <h2>DashPro</h2>
-        <a>DashBoard</a>
-        <a>Analytics</a>
-        <a>Messages</a>
-        <a>Settings</a>
-      </aside>
-
+      <Sidebar />
       <main className='main'>
-        <nav className='navbar'>
-          <div>
-            <h1>Dashboard</h1>
-            <p>Welcome to your dashboard!</p>
-          </div>
-          <button>Profile</button>
-        </nav>
+        <Navbar />
         <section className='cards'>
-          <div className='card'>
-            <p>Total Users</p>
-            <h2>12,345</h2>
-          </div>
+
+          <StatsCard title="Total Users" value="12,345" />
+          <StatsCard title="Revenue" value="$98,765" />
+          <StatsCard title="Project" value="12" />
+
+          <StatsCard title="Growth" value="25%" />
         </section>
+
+        <section className='table card'>
+          <RevenueChart />
+
+          <RecentActivity />
+        </section>
+
       </main>
     </div>
   )
