@@ -1,37 +1,34 @@
 import { useState } from 'react'
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Dashboard from './components/Dashboard';
 import Sidebar from './components/Sidebar';
-import Navbar from './components/Navbar';
-import StatsCard from './components/StatsCard';
-import RevenueChart from './components/RevenueChart';
-import RecentActivity from './components/RecentActivity';
+import Message from './pages/Messages';
+import Settings from './pages/Settings';
+import Messages from './pages/Messages';
+import Analytics from './pages/Analytics';
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div className='dashboard'>
-      <Sidebar />
-      <main className='main'>
-        <Navbar />
-        <section className='cards'>
+  return (<>
+    <BrowserRouter>
+      <div className='dashboard'>
+        <Sidebar />
+        <main className='main'>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/analytics" element={<Analytics />} />
+            <Route path="/messages" element={<Messages />} />
+            <Route path="/settings" element={<Settings />} />
 
-          <StatsCard title="Total Users" value="12,345" />
-          <StatsCard title="Revenue" value="$98,765" />
-          <StatsCard title="Project" value="12" />
+          </Routes>
 
-          <StatsCard title="Growth" value="25%" />
-        </section>
+        </main>
 
-        <section className='table card'>
-          <RevenueChart />
-
-          <RecentActivity />
-        </section>
-
-      </main>
-    </div>
+      </div>
+    </BrowserRouter>
+  </>
   )
+
 }
 
 export default App
