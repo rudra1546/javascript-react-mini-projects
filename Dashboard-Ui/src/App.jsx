@@ -13,6 +13,7 @@ function App() {
     <BrowserRouter>
       <div className='dashboard'>
         <Sidebar />
+        
         <main className='main'>
           <Routes>
             <Route path="/" element={<Dashboard />} />
